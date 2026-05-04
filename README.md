@@ -1,4 +1,4 @@
-# IT3040 ITPM – Assignment 1 (Option 1)
+# IT3040 ITPM – Assignment 1 
 
 ## Singlish to Sinhala Transliteration Testing
 
