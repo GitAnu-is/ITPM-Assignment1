@@ -1,46 +1,27 @@
-# IT3040 ITPM – Assignment 1 
+# IT3040 ITPM – Assignment 1 (Option 1)
 
 ## Singlish to Sinhala Transliteration Testing
 
-This project contains automated test scripts developed to evaluate the accuracy of the **Chat Sinhala Transliteration** feature available at:
+This project contains automated test scripts to evaluate the accuracy of the **Chat Sinhala Transliteration** system available at:
 https://www.pixelssuite.com/chat-translator
 
-The testing focuses on identifying incorrect transliterations of Singlish inputs into Sinhala using automated testing with Playwright.
+The focus is on identifying **incorrect transliterations (negative test cases)** using automation.
 
 ---
 
-## 📌 Prerequisites
+## ⚙️ Installation
 
-* Python 3.11 or higher (used: Python 3.13.3)
-* Google Chrome (or Playwright Chromium)
-* Internet connection
-
----
-
-## ⚙️ Installation Steps
-
-Run the following commands in terminal:
+Install required dependencies:
 
 ```bash
 pip install -U pip
 pip install playwright openpyxl
+```
+
+Install Playwright browser:
+
+```bash
 python -m playwright install chromium
-```
-
----
-
-## 📂 Project Structure
-
-```
-ITPM Assignment1
-│
-├── browsers
-│
-├── test_automation
-│     ├── test_automation.py
-│     ├── IT23244320_Assignment 1 - Test cases.xlsx
-│
-└── README.md
 ```
 
 ---
@@ -65,26 +46,28 @@ python test_automation.py --excel "IT23244320_Assignment 1 - Test cases.xlsx" --
 
 * Total Test Cases: **50 (Negative test cases)**
 * Focus: **Failure scenarios in transliteration**
-* Covers multiple Singlish input types such as:
 
-  * Question forms
-  * Commands
-  * Greetings
-  * Romanization variants
-  * English word insertions
-  * Emojis
-  * Numbers, dates, and more
+### Covered Singlish Input Types:
+
+* Question forms
+* Commands
+* Greetings
+* Romanization variations
+* English word insertions
+* Emojis
+* Numbers, dates, and time formats
+* Mixed language inputs
 
 ---
 
 ## 📊 Results
 
-* The script automatically:
+The automation script performs the following:
 
-  * Inputs Singlish sentences
-  * Captures Sinhala output
-  * Compares with expected output
-  * Updates Excel file
+* Inputs Singlish sentences
+* Captures Sinhala transliteration output
+* Compares with expected output
+* Updates Excel file automatically
 
 ### Output Columns:
 
@@ -98,6 +81,7 @@ python test_automation.py --excel "IT23244320_Assignment 1 - Test cases.xlsx" --
 * Ensure the Excel file is **closed** before running the script
 * Browser will open automatically during execution
 * Results are saved after each test case
+* The **browsers folder is excluded** from submission to reduce file size
 
 ---
 
@@ -106,12 +90,18 @@ python test_automation.py --excel "IT23244320_Assignment 1 - Test cases.xlsx" --
 * Playwright automation project
 * Excel file with test cases and results
 * README.md file
-* Git repository (public access)
+* GitHub repository (public access)
 
 ---
 
 ## 👨‍💻 Author
 
 Registration Number: **IT23244320**
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/GitAnu-is/ITPM-Assignment1
 
 ---
